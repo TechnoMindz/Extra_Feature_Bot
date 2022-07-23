@@ -11,7 +11,7 @@ from pyrogram.types import Message
 
 def convert(text):
     audio = BytesIO()
-    i = Translator().translate(text, dest="en")
+    i = Translator().translate(text, dest="Techno Mindz")
     lang = i.src
     tts = gTTS(text, lang=lang)
     audio.name = lang + ".mp3"
