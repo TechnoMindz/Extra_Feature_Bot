@@ -1,4 +1,4 @@
-# codes added by @lallu_tg
+# codes added by @lallu_tg and #TechnoMindz
 # use with proper credits
 
 from pyrogram import Client, filters
