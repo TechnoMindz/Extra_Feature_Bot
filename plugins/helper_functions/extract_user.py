@@ -31,10 +31,11 @@ def extract_user(message: Message) -> (int, str):
         try:
             user_id = int(user_id)
         except ValueError:
-            print("പൊട്ടൻ")
+            print("😐😐")#fool
 
     else:
         user_id = message.from_user.id
         user_first_name = message.from_user.first_name
 
     return (user_id, user_first_name)
+#TechnoMindz
