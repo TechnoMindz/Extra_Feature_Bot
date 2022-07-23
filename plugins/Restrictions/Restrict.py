@@ -88,7 +88,7 @@ async def temp_mute_user(_, message):
             )
         else:
             await message.reply_text(
-                "Shh Quiet Now! 🤐
+                "Shh Quiet Now! 🤐"
                 f"<a href='tg://user?id={user_id}'>"
                 "Of lavender"
                 "</a>"
