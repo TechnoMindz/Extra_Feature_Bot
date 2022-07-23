@@ -18,7 +18,7 @@ async def telegraph(client, message):
         return
     file_info = get_file_id(replied)
     if not file_info:
-        await message.reply_text("Not supported!")
+        await message.reply_text("Not supported!😐")
         return
     _t = os.path.join(
         TMP_DOWNLOAD_DIRECTORY,
@@ -36,7 +36,7 @@ async def telegraph(client, message):
         await message.reply_text(message, text=document)
     else:
         await message.reply(
-            f"Link :- <code>https://telegra.ph{response[0]}</code>",
+            f"Link :- <code>https://telegra.ph{response[0]}</code>\n\nAbove Is Your Telegraph Link\nMade By @TmMainChannel",
             disable_web_page_preview=True
         )
     finally:
