@@ -23,13 +23,13 @@ async def ban_user(_, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "Someone else is dusting off..! "
+                "Banned That Bastard 🦾! "
                 f"{user_first_name}"
                 " Is forbidden."
             )
         else:
             await message.reply_text(
-                "Someone else is dusting off..! "
+                "Banned That Bastard 🦾! "
                 f"<a href='tg://user?id={user_id}'>"
                 f"{user_first_name}"
                 "</a>"
@@ -52,7 +52,7 @@ async def temp_ban_user(_, message):
     if until_date_val is None:
         await message.reply_text(
             (
-                "Invalid time type specified. "
+                "Invalid time type specified 😵‍💫 "
                 "Expected m, h, or d, Got it: {}"
             ).format(
                 message.command[1][-1]
@@ -72,13 +72,13 @@ async def temp_ban_user(_, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "Someone else is dusting off..! "
+                "Banned That Bastard 🦾!  "
                 f"{user_first_name}"
                 f" banned for {message.command[1]}!"
             )
         else:
             await message.reply_text(
-                "Someone else is dusting off..! "
+                "Banned That Bastard 🦾!  "
                 f"<a href='tg://user?id={user_id}'>"
                 "Lavane"
                 "</a>"
