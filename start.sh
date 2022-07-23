@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/SilentCoder2005/TechnoMindz.git /TechnoMindz
+  git clone https://github.com/TechnoMindz/Extra_Feature_Bot.git /Extra_Feature_Bot
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /TechnoMindz
+  git clone $UPSTREAM_REPO /Extra_Feature_Bot
 fi
-cd /TechnoMindz
+cd /Extra_Feature_Bot
 pip3 install -U -r requirements.txt
-echo "Starting Elsa ❄️❄️ 5,4,3,2,1..."
+echo "Starting Techno Mindz ❄️❄️ "
 python3 bot.py
