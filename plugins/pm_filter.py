@@ -99,7 +99,7 @@ async def fil_mod(client, message):
       else:
           await m.edit("𝚄𝚂𝙴 :- /autofilter on 𝙾𝚁 /autofilter off")
 
-@Client.on_message(filters.group & filters.text & filters.incoming)
+@Client.on_message((filters.group | filters.private) & filters.text & filters.incoming)
 async def give_filter(client,message):
     group_id = message.chat.id
     name = message.text
@@ -278,20 +278,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('What Are You Searching 🤔')
+                    return await query.answer('⏳Loading...')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('What Are You Searching 🤔')
+                return await query.answer('⏳Loading...')
 
         elif chat_type in ["group", "supergroup"]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('What Are You Searching 🤔')
+            return await query.answer('⏳Loading...')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == "creator") or (str(userid) in ADMINS):
@@ -345,7 +345,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode="md"
         )
-        return await query.answer('What Are You Searching 🤔')
+        return await query.answer('⏳Loading...')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -366,7 +366,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode="md")
-        return await query.answer('What Are You Searching 🤔')
+        return await query.answer('⏳Loading...')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -389,7 +389,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode="md"
             )
-        return await query.answer('What Are You Searching 🤔')
+        return await query.answer('⏳Loading...')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -407,7 +407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode="md"
             )
-        return await query.answer('What Are You Searching 🤔')
+        return await query.answer('⏳Loading...')
     elif query.data == "backcb":
         await query.answer()
 
@@ -418,7 +418,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('What Are You Searching 🤔')
+            return await query.answer('⏳Loading...')
         buttons = []
         for groupid in groupids:
             try:
