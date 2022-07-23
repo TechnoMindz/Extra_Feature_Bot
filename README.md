@@ -1,6 +1,7 @@
 
 # <i><b>💖TECHNO MINDZ EXtra Feature Bot💝</i></b>
 
+## Start Message With Video
 ## Ultimate EXtra Feature Bot With Autodelte Feature And Many More..
 ## Usage of Credits Must Be There While Forking
 
@@ -78,6 +79,7 @@
 • /warn - to warn a user
 • /telegraph - to get any telegraph links of pic and vid
 • /tts - Text To Speech
+• /stickerid - To get sticker id
 
 ```
 ## CUSTOM FILE CAPTION
