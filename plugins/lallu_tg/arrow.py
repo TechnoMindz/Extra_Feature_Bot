@@ -1,4 +1,4 @@
-# codes added by @lallu_tg
+# codes added by @lallu_tg and @TechnoMindz
 # use with proper credits
 
 from pyrogram import Client, filters
@@ -26,3 +26,4 @@ async def throw_dart(client, message):
         reply_to_message_id=rep_mesg_id
     )
 
+#TechnoMindz
