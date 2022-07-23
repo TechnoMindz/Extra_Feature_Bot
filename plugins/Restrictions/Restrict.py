@@ -33,7 +33,7 @@ async def mute_user(_, message):
             await message.reply_text(
                 "👍🏻 "
                 f"{user_first_name}"
-                " Lavender's mouth is shut! 🤐"
+                " Shh Quiet Now! 🤐"
             )
         else:
             await message.reply_text(
@@ -41,7 +41,7 @@ async def mute_user(_, message):
                 f"<a href='tg://user?id={user_id}'>"
                 "Of lavender"
                 "</a>"
-                " The mouth is closed! 🤐"
+                " Shh Quiet Now! 🤐"
             )
 
 
@@ -82,13 +82,13 @@ async def temp_mute_user(_, message):
     else:
         if str(user_id).lower().startswith("@"):
             await message.reply_text(
-                "Be quiet for a while! 😠"
+                "Shh Quiet Now! 🤐"
                 f"{user_first_name}"
                 f" muted for {message.command[1]}!"
             )
         else:
             await message.reply_text(
-                "Be quiet for a while! 😠"
+                "Shh Quiet Now! 🤐
                 f"<a href='tg://user?id={user_id}'>"
                 "Of lavender"
                 "</a>"
