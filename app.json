@@ -16,28 +16,28 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/TechnoMindz/IMDB_AutoDeleteRobot",
-    "repository": "https://github.com/TechnoMindz/IMDB_AutoDeleteRobot",
+    "website": "https://github.com/TechnoMindz/Extra_Feature_Bot",
+    "repository": "https://github.com/TechnoMindz/Extra_Feature_Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
             "required": true,
-            "value": "5298122432:AAHbLnSr9a6ntjiOo5wLhsuNP_HdgfhpFtI"
+            "value": "5298122432:AAHbLnSr9a6nxxxxxxxx"
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
             "required": true,
-            "value": "17050357"
+            "value": "17xxxxxx"
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
             "required": true,
-            "value": "29fd19124a1f32e9150625e2357a7a2f"
+            "value": "29fd19124a1f3xxxxxxxf"
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
             "required": false,
-            "value": "-1001650104536"
+            "value": "-100xxxxxxxxx"
         },
         "ADMINS": {
             "description": " ID of Admin. Separate multiple Admins by space.",
@@ -47,7 +47,7 @@
         "BOT_USERNAME": {
             "description": "Username of Bot Without @",
             "required": true,
-            "value": "TmElsaRobot"
+            "value": "yourbotusername"
         },
         "PICS": {
             "description": "Add some telegraph link of pictures .",
@@ -57,7 +57,7 @@
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
             "required": true,
-            "value": "-1001779986786"
+            "value": "-100xxxxxxx"
         },
         "SUPPORT_CHAT": {
             "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
@@ -81,17 +81,17 @@
         "CUSTOM_FILE_CAPTION": {
             "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
             "required": false,
-            "value": ""
+            "value": "Made By @TmMainChannel"
         },
         "UPSTREAM_REPO": {
             "description": "Don't Change Or It Won't Work",
             "required": false,
-            "value": "https://github.com/SilentCoder2005/TechnoMindz"
+            "value": "https://github.com/TechnoMindz/Extra_Feature_Bot"
         },
         "DATABASE_URI": {
             "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
             "required": true,
-            "value": "mongodb+srv://elsacomeand:fuck@cluster0.yccwy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+            "value": "yourmongodblink"
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
