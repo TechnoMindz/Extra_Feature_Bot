@@ -44,7 +44,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS' ,'https://telegra.ph/file/3d87cdb638b5444198c59.jpg https://telegra.ph/file/2140af3c0cb1c848ef5a0.jpg https://telegra.ph/file/f5c3720b2ce9d1d97d59f.jpg https://telegra.ph/file/e67137996688342d75f1e.jpg')).split()
+PICS = (environ.get('PICS' ,'https://telegra.ph//file/b12246b0780a927bc8190.jpg https://telegra.ph/file/b417bdd01331179d5787c.jpg https://telegra.ph/file/775ee57c7a7550ad611ed.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -71,7 +71,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #Downloader
@@ -79,7 +79,7 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TechnoMindzChat')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
