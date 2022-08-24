@@ -395,6 +395,12 @@ async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
     await message.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
+    
+@Client.on_message(filters.private & filters.text & ~filters.regex("^/"))
+async def msg_handler(c, m):
+    await m.reply_text(
+        "𝐇𝐞𝐥𝐥𝐨 𝐮𝐬𝐞𝐫𝐬 👋 \𝐧𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚𝐥𝐥𝐨𝐰𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞 𝐈𝐧 𝐏𝐌 𝐓𝐨 𝐚𝐯𝐨𝐢𝐝 𝐮𝐧𝐰𝐚𝐧𝐭𝐞𝐝 𝐟𝐥𝐨𝐨𝐝𝐬 𝐚𝐧𝐝 𝐜𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 𝐢𝐬𝐬𝐮𝐞\n𝐇𝐨𝐰𝐞𝐯𝐞𝐫 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐆𝐞𝐭 𝐲𝐨𝐮𝐫 𝐫𝐞𝐪𝐮𝐢𝐫𝐞𝐝 𝐦𝐨𝐯𝐢𝐞𝐬 𝐡𝐞𝐫𝐞 👉@TechnoMoviesCollection\n𝐈𝐟 𝐲𝐨𝐮 𝐧𝐞𝐞𝐝 𝐭𝐨 𝐜𝐡𝐢𝐭 𝐜𝐡𝐚𝐭 𝐨𝐫 𝐫𝐞𝐩𝐨𝐫𝐭 𝐚𝐧𝐲 𝐛𝐮𝐠𝐬 𝐲𝐨𝐮 𝐚𝐫𝐞 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐜𝐡𝐚𝐭 𝐡𝐞𝐫𝐞 👉@TechnoMindzChat\n\n𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐘𝐨𝐮𝐫 𝐂𝐨𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧✨\n\n♥️ 𝗧𝗲𝗮𝗺 ➜ @TmMainChannel"
+    )
 
 
 @Client.on_message(filters.command('settings'))
